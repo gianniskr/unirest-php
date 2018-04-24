@@ -233,7 +233,11 @@ class Request
      */
     public static function get($url, $headers = array(), $parameters = null, $username = null, $password = null)
     {
-        return self::send(Method::GET, $url, $parameters, $headers, $username, $password);
+        try{
+            return self::send(Method::GET, $url, $parameters, $headers, $username, $password);
+        }catch (Unirest\Exception $e){
+            return $e;
+        }
     }
 
     /**
@@ -247,7 +251,11 @@ class Request
      */
     public static function head($url, $headers = array(), $parameters = null, $username = null, $password = null)
     {
-        return self::send(Method::HEAD, $url, $parameters, $headers, $username, $password);
+        try{
+            return self::send(Method::HEAD, $url, $parameters, $headers, $username, $password);
+        }catch (Unirest\Exception $e){
+            return $e;
+        }
     }
 
     /**
@@ -261,7 +269,11 @@ class Request
      */
     public static function options($url, $headers = array(), $parameters = null, $username = null, $password = null)
     {
-        return self::send(Method::OPTIONS, $url, $parameters, $headers, $username, $password);
+        try{
+            return self::send(Method::OPTIONS, $url, $parameters, $headers, $username, $password);
+        }catch (Unirest\Exception $e){
+            return $e;
+        }
     }
 
     /**
@@ -275,7 +287,11 @@ class Request
      */
     public static function connect($url, $headers = array(), $parameters = null, $username = null, $password = null)
     {
-        return self::send(Method::CONNECT, $url, $parameters, $headers, $username, $password);
+        try{
+            return self::send(Method::CONNECT, $url, $parameters, $headers, $username, $password);
+        }catch (Unirest\Exception $e){
+            return $e;
+        }
     }
 
     /**
@@ -289,7 +305,11 @@ class Request
      */
     public static function post($url, $headers = array(), $body = null, $username = null, $password = null)
     {
-        return self::send(Method::POST, $url, $body, $headers, $username, $password);
+        try{
+            return self::send(Method::POST, $url, $body, $headers, $username, $password);
+        }catch (Unirest\Exception $e){
+            return $e;
+        }
     }
 
     /**
@@ -303,7 +323,11 @@ class Request
      */
     public static function delete($url, $headers = array(), $body = null, $username = null, $password = null)
     {
-        return self::send(Method::DELETE, $url, $body, $headers, $username, $password);
+        try{
+            return self::send(Method::DELETE, $url, $body, $headers, $username, $password);
+        }catch (Unirest\Exception $e){
+            return $e;
+        }
     }
 
     /**
@@ -317,7 +341,11 @@ class Request
      */
     public static function put($url, $headers = array(), $body = null, $username = null, $password = null)
     {
-        return self::send(Method::PUT, $url, $body, $headers, $username, $password);
+        try{
+            return self::send(Method::PUT, $url, $body, $headers, $username, $password);
+        }catch (Unirest\Exception $e){
+            return $e;
+        }
     }
 
     /**
@@ -331,7 +359,11 @@ class Request
      */
     public static function patch($url, $headers = array(), $body = null, $username = null, $password = null)
     {
-        return self::send(Method::PATCH, $url, $body, $headers, $username, $password);
+        try{
+            return self::send(Method::PATCH, $url, $body, $headers, $username, $password);
+        }catch (Unirest\Exception $e){
+            return $e;
+        }
     }
 
     /**
@@ -345,7 +377,11 @@ class Request
      */
     public static function trace($url, $headers = array(), $body = null, $username = null, $password = null)
     {
-        return self::send(Method::TRACE, $url, $body, $headers, $username, $password);
+        try{
+            return self::send(Method::TRACE, $url, $body, $headers, $username, $password);
+        }catch (Unirest\Exception $e){
+            return $e;
+        }
     }
 
     /**
