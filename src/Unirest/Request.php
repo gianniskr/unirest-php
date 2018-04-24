@@ -235,7 +235,7 @@ class Request
     {
         try{
             return self::send(Method::GET, $url, $parameters, $headers, $username, $password);
-        }catch (Unirest\Exception $e){
+        }catch (Exception $e){
             throw $e;
         }
     }
@@ -253,7 +253,7 @@ class Request
     {
         try{
             return self::send(Method::HEAD, $url, $parameters, $headers, $username, $password);
-        }catch (Unirest\Exception $e){
+        }catch (Exception $e){
             throw $e;
         }
     }
@@ -271,7 +271,7 @@ class Request
     {
         try{
             return self::send(Method::OPTIONS, $url, $parameters, $headers, $username, $password);
-        }catch (Unirest\Exception $e){
+        }catch (Exception $e){
             throw $e;
         }
     }
@@ -289,7 +289,7 @@ class Request
     {
         try{
             return self::send(Method::CONNECT, $url, $parameters, $headers, $username, $password);
-        }catch (Unirest\Exception $e){
+        }catch (Exception $e){
             throw $e;
         }
     }
@@ -307,7 +307,7 @@ class Request
     {
         try{
             return self::send(Method::POST, $url, $body, $headers, $username, $password);
-        }catch (Unirest\Exception $e){
+        }catch (Exception $e){
             throw $e;
         }
     }
@@ -325,7 +325,7 @@ class Request
     {
         try{
             return self::send(Method::DELETE, $url, $body, $headers, $username, $password);
-        }catch (Unirest\Exception $e){
+        }catch (Exception $e){
             throw $e;
         }
     }
@@ -343,7 +343,7 @@ class Request
     {
         try{
             return self::send(Method::PUT, $url, $body, $headers, $username, $password);
-        }catch (Unirest\Exception $e){
+        }catch (Exception $e){
             throw $e;
         }
     }
@@ -361,7 +361,7 @@ class Request
     {
         try{
             return self::send(Method::PATCH, $url, $body, $headers, $username, $password);
-        }catch (Unirest\Exception $e){
+        }catch (Exception $e){
             throw $e;
         }
     }
@@ -379,7 +379,7 @@ class Request
     {
         try{
             return self::send(Method::TRACE, $url, $body, $headers, $username, $password);
-        }catch (Unirest\Exception $e){
+        }catch (Exception $e){
             throw $e;
         }
     }
